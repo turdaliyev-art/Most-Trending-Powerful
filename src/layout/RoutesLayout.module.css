@@ -1,0 +1,14 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+main {
+    padding: 10rem 4rem 4rem 29rem ;
+    background: #F5F6FA;
+    max-width: 156rem;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+

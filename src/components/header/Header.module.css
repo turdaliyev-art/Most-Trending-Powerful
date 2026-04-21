@@ -1,0 +1,68 @@
+header {
+    /* max-width: 156rem; */
+    width: 100%;
+    margin: 0 auto;
+    background: #fffff8;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 12.3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+
+    .hdrLogo {
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+
+        .logoTxt {
+            font-size: 2.17rem;
+            font-weight: 800;
+            line-height: 3.1rem;
+            font-family: var(--inter);
+        }
+
+        img {
+            width: 4.1rem;
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        background: #fff;
+        width: 59%;
+
+        .searchIc {
+            color: var(--gray);
+            font-size: 1.7rem;
+        }
+
+        input {
+            outline: none;
+            border: none;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            font-weight: 400;
+
+        }
+    }
+
+    .userAcc {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        padding-right: 4.4rem;
+
+        .userName {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            font-family: var(--inter);
+            color: var(--gray);
+            display: flex;
+        }
+    }
+}

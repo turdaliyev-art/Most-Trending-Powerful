@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: all .3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+}
+
+:root {
+  --theme : #1E5EFF;
+  --gray: #5A607F;
+  --inter: 'Inter', sans-serif;
+}

@@ -1,0 +1,58 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "src": "./product1.png",
+            "name": "Men Grey Hoodie",
+            "category": "Hoodies",
+            "inventory": "96 in stock",
+            "color": "black",
+            "price": "$49.90",
+            "rating": "5.0 (32 Votes)",
+            "unitsSold": 204
+        },
+        {
+            "id": 2,
+            "src": "./product2.png",
+            "name": "Women Striped T-Shirt",
+            "category": "T-Shirt",
+            "inventory": "56 in stock",
+            "color": "White",
+            "price": "$34.90",
+            "rating": "4.8 (24 Votes)",
+            "unitsSold": 155
+        },
+        {   "id": 3,
+            "src": "./product3.png",
+            "name": "Women White T-Shirt",
+            "category": "T-Shirt",
+            "inventory": "78 in stock",
+            "color": "White",
+            "price": "$40.90",
+            "rating": "5.0 (54 Votes)",
+            "unitsSold": 120
+        },
+        {
+            "id": 4,
+            "src": "./product4.png",
+            "name": "Men White T-Shirt",
+            "category": "T-Shirt",
+            "inventory": "32 in stock",
+            "color": "White",
+            "price": "$49.90",
+            "rating": "4.5 (31 Votes)",
+            "unitsSold": 204
+        },
+        {
+            "id": 5,
+            "src": "./product5.png",
+            "name": "Women Red T-Shirt",
+            "category": "T-Shirt",
+            "inventory": "32 in stock",
+            "color": "White",
+            "price": "$34.90",
+            "rating": "5.0 (32 Votes)",
+            "unitsSold": 155
+        }
+    ]
+}

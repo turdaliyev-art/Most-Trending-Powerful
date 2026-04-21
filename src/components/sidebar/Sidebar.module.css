@@ -1,0 +1,55 @@
+aside {
+    padding: 8.6rem 1.6rem 1.6rem 1.6rem;
+    max-width: 25rem;
+    background: #F5F6FA;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    border-right: 0.1rem solid #D7DBEC;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        li {
+            width: 21.8rem;
+        }
+    }
+    a {
+        padding: 1rem 1.6rem;
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 2rem;
+        color: var(--gray);
+        font-family: var(--inter);
+        border-radius: 0.4rem;
+        border: 0.1rem solid transparent;
+
+        &:hover {
+            color: var(--theme);
+            border-color: var(--theme);
+            .asideIc {
+                color: var(--theme);
+            }
+        }
+
+        &.active{
+            background-color: var(--theme);
+            color: #fff;
+
+            .asideIc {
+                color: #fff;
+            }
+        }
+
+        .asideIc {
+            font-size: 2.4rem;
+            color: var(--gray);
+        }
+    }
+}
