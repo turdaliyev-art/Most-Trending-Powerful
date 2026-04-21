@@ -120,7 +120,7 @@ function Dashboard() {
                 <LineChart data={data} margin={{ top: 5, right: 20, left: -20, bottom: 5 }}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                   <XAxis dataKey="time" axisLine={false} tickLine={false} tick={{ fill: '#94a3b8', fontSize: 12 }} />
-                  <YAxis axisLine={false} tickLine={false} tick={{ fill: '#94a3b8', fontSize: 12 }} />
+                  <YAxis axisLine={false} tickLine={false} tick={{ fill: '#94a3b8',fontFamily: "san serif", fontSize: 12 }} />
                   <Tooltip content={<CustomTooltip />} />
                   <Line type="monotone" dataKey="may22" stroke="#2563eb" strokeWidth={3} dot={{ fill: '#2563eb', r: 5 }} activeDot={{ r: 7 }} />
                   <Line type="monotone" dataKey="may21" stroke="#cbd5e1" strokeWidth={3} dot={false} />
@@ -132,7 +132,7 @@ function Dashboard() {
         <div className={styles.dshChart2}>
             <div style={{ width: '100%', maxWidth: '350px', padding: '28px', fontFamily: 'sans-serif' }}>
               <h2 style={{ fontSize: '20px', marginBottom: '20px' }}>{title || "Last 7 Days Sales"}</h2>
-              <div style={{ marginBottom: '20px' }}>
+              <div style={{ marginBottom: '-10px' }}>
                 <p style={{ fontSize: '20px', fontWeight: 'bold', margin: 0 }}>{totalItems}</p>
                 <p style={{ color: '#64748b',fontSize: "14px", lineHeight:"20px", marginBottom: "12px" }}>Items Sold</p>
                 <p style={{ fontSize: '20px', fontWeight: 'bold', margin: '10px 0 0' }}>${totalRevenue}</p>
