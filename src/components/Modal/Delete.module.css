@@ -1,0 +1,91 @@
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: #13152370;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    .deleteDiv {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 2.8rem;
+        max-width: 54rem;
+        width: 100%;
+        
+        .closeBtn {
+            position: absolute;
+            top: 1.2rem;
+            right: 1.2rem;
+            font-size: 1.6rem;
+            color: var(--gray);
+        }
+        .aboutDesc {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+
+        }
+
+        .desc {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            font-weight: 700;
+            color: #131523;
+            font-family: var(--inter);
+            align-self: stretch;
+        }
+
+        .text {
+            margin-top: 2rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #131523;
+            font-family: var(--inter);
+            align-self: stretch;
+        }
+
+        .btns {
+            margin-top: 4rem;
+            display: flex;
+            align-items: center;
+            gap: 2.8rem;
+
+            button {
+                padding: 0.8rem 2rem;
+                border-radius: 0.4rem;
+                border: 1px solid transparent;
+                background: #fff;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #F0142F;
+
+                &:hover{
+                    border-color: #F0142F;
+                }
+            }
+            
+            button:last-child {
+                border: 1px solid #F0142F;
+                background: #F0142F;
+                color: #fff !important;
+
+                &:hover {   
+                    background-color:#a60619;
+                    border-color: #a60619;
+
+                }
+            }
+        }
+    }
+}

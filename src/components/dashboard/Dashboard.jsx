@@ -2,7 +2,9 @@ import styles from "./Dashboard.module.css"
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { FaArrowTrendDown } from "react-icons/fa6";
 import React, { useContext } from 'react'
-import { productsData } from '../../App'
+// import { productsData } from '../../App'
+import { AppData } from '../../App'
+
 import { 
   LineChart, Line, XAxis, YAxis, CartesianGrid, 
   Tooltip, ResponsiveContainer 
@@ -48,14 +50,14 @@ const CustomTooltip = ({ active, payload }) => {
   return null;
 };
 
+const chartData = data2; 
+const title = "Last 7 Days Sales";  
+const totalItems = "1,259";
+const totalRevenue = "12,546";
 
 function Dashboard() {
-    const products = useContext(productsData)
+   const { products } = useContext(AppData)
 
-  const chartData = data2; // yuqorida aniqlangan data2 ni ishlatamiz
-  const title = "Last 7 Days Sales";
-  const totalItems = "1,259";
-  const totalRevenue = "12,546";
   return (
     <div className={styles.dashboard}>
       <p className={styles.dshTitle}>Dashboard</p>
@@ -177,15 +179,15 @@ function Dashboard() {
                 </tr>
               </thead>
               <tbody className={styles.tbody}>
-               {products.map((product, i) => (
-                 <tr key={i}>
+               {products.map((product, ) => (
+                 <tr key={product.id}>
                    <td>
                      <div className={styles.productInfo}>
                        <img src={product.src} alt={product.name} className={styles.productImg} />
                        {product.name}
                      </div>
                    </td>
-                   <td>{product.price}</td>
+                   <td>${product.price}</td>
                    <td>{product.unitsSold}</td>
                  </tr>
                ))}

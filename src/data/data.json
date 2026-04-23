@@ -1,58 +1,91 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "src": "./product1.png",
-            "name": "Men Grey Hoodie",
-            "category": "Hoodies",
-            "inventory": "96 in stock",
-            "color": "black",
-            "price": "$49.90",
-            "rating": "5.0 (32 Votes)",
-            "unitsSold": 204
-        },
-        {
-            "id": 2,
-            "src": "./product2.png",
-            "name": "Women Striped T-Shirt",
-            "category": "T-Shirt",
-            "inventory": "56 in stock",
-            "color": "White",
-            "price": "$34.90",
-            "rating": "4.8 (24 Votes)",
-            "unitsSold": 155
-        },
-        {   "id": 3,
-            "src": "./product3.png",
-            "name": "Women White T-Shirt",
-            "category": "T-Shirt",
-            "inventory": "78 in stock",
-            "color": "White",
-            "price": "$40.90",
-            "rating": "5.0 (54 Votes)",
-            "unitsSold": 120
-        },
-        {
-            "id": 4,
-            "src": "./product4.png",
-            "name": "Men White T-Shirt",
-            "category": "T-Shirt",
-            "inventory": "32 in stock",
-            "color": "White",
-            "price": "$49.90",
-            "rating": "4.5 (31 Votes)",
-            "unitsSold": 204
-        },
-        {
-            "id": 5,
-            "src": "./product5.png",
-            "name": "Women Red T-Shirt",
-            "category": "T-Shirt",
-            "inventory": "32 in stock",
-            "color": "White",
-            "price": "$34.90",
-            "rating": "5.0 (32 Votes)",
-            "unitsSold": 155
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "src": "./product1.png",
+      "name": "Men Grey Hoodie",
+      "category": "Hoodies",
+      "inventory": "96 in stock",
+      "color": "black",
+      "price": 49.9,
+      "rating": "5.0 (32 Votes)",
+      "unitsSold": 204
+    },
+    {
+      "id": "2",
+      "src": "./product2.png",
+      "name": "Women Striped T-Shirt",
+      "category": "T-Shirt",
+      "inventory": "56 in stock",
+      "color": "White",
+      "price": 34.9,
+      "rating": "4.8 (24 Votes)",
+      "unitsSold": 155
+    },
+    {
+      "id": "3",
+      "src": "./product3.png",
+      "name": "Women White T-Shirt",
+      "category": "T-Shirt",
+      "inventory": "78 in stock",
+      "color": "White",
+      "price": 40.9,
+      "rating": "5.0 (54 Votes)",
+      "unitsSold": 120
+    },
+    {
+      "id": "4",
+      "src": "./product4.png",
+      "name": "Men White T-Shirt",
+      "category": "T-Shirt",
+      "inventory": "32 in stock",
+      "color": "White",
+      "price": 49.9,
+      "rating": "4.5 (31 Votes)",
+      "unitsSold": 204
+    },
+    {
+      "id": "5",
+      "src": "./product5.png",
+      "name": "Women Red T-Shirt",
+      "category": "T-Shirt",
+      "inventory": "32 in stock",
+      "color": "White",
+      "price": 34.9,
+      "rating": "5.0 (32 Votes)",
+      "unitsSold": 155
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "src": "./category1.png",
+      "category": "Men Clothes",
+      "item": "24 items"
+    },
+    {
+      "id": "2",
+      "src": "./category2.png",
+      "category": "Accessories",
+      "item": "43 items"
+    },
+    {
+      "id": "3",
+      "src": "./category3.png",
+      "category": "Cotton Clothes",
+      "item": "31 items"
+    },
+    {
+      "id": "4",
+      "src": "./category4.png",
+      "category": "Wedding Clothes",
+      "item": "52 items"
+    },
+    {
+      "id": "5",
+      "src": "./category5.png",
+      "category": "Hats",
+      "item": "26 items"
+    }
+  ]
 }

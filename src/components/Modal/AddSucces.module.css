@@ -1,0 +1,74 @@
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: #13152370;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    .closeBtn {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+        font-size: 1.6rem;
+        color: var(--gray);
+    }
+
+    .succesDiv {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 2.8rem;
+        max-width: 54rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        border-radius: .6rem;
+   
+        .aboutDesc {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            align-items: center;
+        }
+        
+        .succesIcon {
+            background: #ECF2FF;
+            border-radius: 50%;
+            padding: 1.6rem 1.8rem;
+            .succesIc {
+                font-size: 2rem;
+                color: var(--theme);
+            }
+        }
+
+        .text {
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            color: #131523;
+            font-family: var(--inter);
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            border-radius: 0.4rem;
+            border: none;
+            background: var(--theme);
+            color: #fff;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            font-weight: 400;
+            font-family: var(--inter);
+            &:hover{
+                background-color: #0c3aad;
+            }
+        }
+
+    }
+}

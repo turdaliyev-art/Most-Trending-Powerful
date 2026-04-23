@@ -1,0 +1,79 @@
+.ctgHdr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+        .ctgTitle {
+             font-size: 2.4rem;
+                font-weight: 700;
+                line-height: 3.6rem;
+                font-family: var(--inter);
+                color: #131523;
+        }
+        button {
+            border-color: var(--theme);
+            background: var(--theme);gap: ;
+            border-radius: 0.4rem;
+            padding: 0.7rem 1.9rem; 
+            color: #fff;
+            font-family: var(--inter);
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+
+            &:hover {
+                background-color: transparent;
+                color: var(--theme);
+            }
+        }
+    }
+
+.categoriesBlog {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+
+        .ctgContainer {
+                width: 100%;
+                background: #fff;
+                border-radius: .6rem;
+                box-shadow: 0px .2rem .6rem rgba(21, 34, 50, 0.08);
+
+                img {
+                        width: 100%;
+                }
+
+                
+                .itemDesc {
+                        padding: 2rem 2.8rem;
+                        width: 100%;
+
+                        .ctgName{ 
+                                font-size: 1.6rem;
+                                font-weight: 700;
+                                line-height: 2.4rem;
+                                font-family: var(--inter);
+                                color: #131523;
+
+                        }
+
+                        .itemCount {
+                                font-size: 1.4rem;
+                                font-weight: 400;
+                                line-height: 2rem;
+                                font-family: var(--inter);
+                                color: var(--gray);
+                        }
+                }
+
+        }
+
+
+}
+
+
+

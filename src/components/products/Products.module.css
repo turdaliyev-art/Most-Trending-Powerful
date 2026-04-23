@@ -1,0 +1,120 @@
+.products {
+
+    .productsHdr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            border-color: var(--theme);
+            background: var(--theme);
+            border-radius: 0.4rem;
+            padding: 0.7rem 1.9rem; 
+            color: #fff;
+            font-family: var(--inter);
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            display: flex;
+            align-items: center;
+            border: .2rem solid transparent;
+            gap: 0.4rem;
+
+            &:hover {
+                background-color: transparent;
+                color: var(--theme);
+                border-color:var(--theme);
+            }
+        }
+    }
+    
+    .productsTitle {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 3.6rem;
+        font-family: var(--inter);
+        color: #131523;
+    }
+
+    
+    .prdContainer {
+        background: #ffffff;
+        padding: 6rem 2.8rem 2.8rem 2.8rem;
+        border-radius: 1.2rem;
+        border: 0.1rem solid #f1f5f9;
+        margin-top: 3rem;
+        position: relative;
+
+        .btns {
+            display: flex;
+            position: absolute;
+            right: 3rem;
+            top: 2.8rem;
+            gap: 1rem;
+
+            button {
+                padding: .3rem .5rem;
+                background: transparent;
+                border: none;
+                border: 0.1rem solid #E6E9F4;
+                border-radius: 0.4rem;
+            }
+
+            .editBtn {
+                font-size: 2rem;
+                color: var(--theme);
+                
+            }
+            .delBtn {
+                color: var(--theme);
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    .title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #131523;
+        margin-bottom: 2rem;
+        line-height: 2.4rem;
+        font-family: var(--inter);
+    }
+    
+    .tableHdr {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        
+    }
+    
+    .thead th {
+        text-align: left;
+        font-size: 1.4rem;
+        padding: 1rem 15rem 1rem 0; 
+        color: #64748b;
+        font-weight: 500;
+        font-family: var(--inter);
+    }
+
+    .tbody td {
+        padding: 1.2rem 0;
+        border-top: 0.2rem solid #E6E9F4;
+        font-size: 1.5rem;
+        color: #1e293b;
+        width: 100%;
+      font-family: var(--inter);
+    }
+    
+    .productInfo {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    
+    .productImg {
+        width: 3.6rem;
+        height: 3.6rem;
+        object-fit: cover;
+        border-radius: 0.4rem;
+    }
+}
