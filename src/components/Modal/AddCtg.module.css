@@ -1,7 +1,7 @@
 .overlay {
       width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     background: #13152370;
     top: 0;
     left: 0;
@@ -21,7 +21,7 @@
         flex-direction: column;
         align-items: end;
         border-radius: .6rem;
-        position: absolute;
+        position: fixed;
 
         .addCtgTitle {
             font-weight: 700;

@@ -31,7 +31,7 @@ function AddProducts() {
   const handleSave = async () => {
 
     if (!productData.name || !productData.price || !productData.src || !productData.category) {
-      alert("Inputlarni to‘ldir!")
+      alert("Inputlarni to'ldir!")
       return
     }
 
@@ -58,7 +58,7 @@ function AddProducts() {
     if (res.ok) {
       setProducts([...products, data])
 
-      // 🔥 modal ochiladi
+
       setSuccess(true)
     }
   }
@@ -183,7 +183,7 @@ function AddProducts() {
 
       </div>
 
-      {/* 🔥 SUCCESS MODAL */}
+
       {success && (
         <AddSucces 
           closeAction={() => {

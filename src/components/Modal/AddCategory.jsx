@@ -1,39 +1,62 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import styles from "./AddCtg.module.css"
 import { IoCloseSharp } from "react-icons/io5";
 import { AppData } from '../../App'
 
-function AddCategory({ onClose }) {
+function AddCategory({ onClose, editData }) {
 
   const { category, setCategory } = useContext(AppData)
 
   const [name, setName] = useState("")
   const [img, setImg] = useState("")
 
-  async function handleAdd() {
+  useEffect(() => {
+    if (editData) {
+      setName(editData.category)
+      setImg(editData.src)
+    }
+  }, [editData])
+
+  async function handleSubmit() {
     if (!name || !img) {
-      alert("Inputlarni to‘ldir!")
+      alert("Inputlarni to'ldir!")
       return
     }
 
-    const newCategory = {
+    const newData = {
       category: name,
       src: img,
-      item: 0
+      item: editData ? editData.item : 0
     }
 
- 
-    const res = await fetch("http://localhost:3000/categories", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(newCategory)
-    })
+  
+    if (editData) {
+      const res = await fetch(`http://localhost:3000/categories/${editData.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newData)
+      })
 
-    const data = await res.json()
+      const data = await res.json()
 
-    setCategory([...category, data])
+      setCategory(category.map(c => c.id === editData.id ? data : c))
+    } 
+  
+    else {
+      const res = await fetch("http://localhost:3000/categories", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newData)
+      })
+
+      const data = await res.json()
+
+      setCategory([...category, data])
+    }
 
     onClose()
   }
@@ -51,13 +74,14 @@ function AddCategory({ onClose }) {
           onClick={onClose}
         />
 
-        <p className={styles.addCtgTitle}>Add Category</p>
+        <p className={styles.addCtgTitle}>
+          {editData ? "Edit Category" : "Add Category"}
+        </p>
 
         <label>
           Category Name
           <input 
             type="text" 
-            placeholder='Women Clothes'
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -67,7 +91,6 @@ function AddCategory({ onClose }) {
           Category Image url
           <input 
             type="text" 
-            placeholder='Image url'
             value={img}
             onChange={(e) => setImg(e.target.value)}
           />
@@ -75,7 +98,9 @@ function AddCategory({ onClose }) {
 
         <div className={styles.addCtgBtns}>
           <button onClick={onClose}>Cancel</button>
-          <button onClick={handleAdd}>Create Category</button>
+          <button onClick={handleSubmit}>
+            {editData ? "Save Changes" : "Create Category"}
+          </button>
         </div>
 
       </div>

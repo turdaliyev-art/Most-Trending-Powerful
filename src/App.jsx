@@ -13,15 +13,15 @@ function App() {
 
   const [products, setProducts] = useState([])
   const [category, setCategory] = useState([])
+   const [search, setSearch] = useState("")
 
-  // PRODUCTS
+
   async function fetchProducts() {
     const res = await fetch("http://localhost:3000/products")
     const data = await res.json()
     setProducts(data)
   }
 
-  // CATEGORIES
   async function fetchCategory() {
     const res = await fetch("http://localhost:3000/categories")
     const data = await res.json()
@@ -66,7 +66,7 @@ function App() {
   ])
 
   return (
-   <AppData.Provider value={{ products,setProducts, category, setCategory }}>
+   <AppData.Provider value={{ products,setProducts, category, setCategory, search, setSearch }}>
       <RouterProvider router={router} />
     </AppData.Provider>
   )
