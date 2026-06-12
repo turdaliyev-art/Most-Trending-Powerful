@@ -54,18 +54,6 @@
       "price": 34.9,
       "rating": "5.0 (32 Votes)",
       "unitsSold": 155
-    },
-    {
-      "name": "Men Grey Hoodie",
-      "description": "",
-      "src": "./product3.png",
-      "price": 12,
-      "discountPrice": 22,
-      "category": "T-Shirt",
-      "id": "4-6Mb7lyHqg",
-      "inventory": 0,
-      "color": "N/A",
-      "rating": 0
     }
   ],
   "categories": [
@@ -88,23 +76,29 @@
       "item": "31 items"
     },
     {
-      "id": "4",
-      "src": "./category4.png",
       "category": "Wedding Clothes",
-      "item": "52 items"
+      "src": "./category4.png",
+      "item": "52 items",
+      "id": "4"
     },
     {
-      "id": "5",
-      "src": "./category5.png",
       "category": "Hats",
-      "item": "26 items"
+      "src": "./category5.png",
+      "item": "26 items",
+      "id": "5"
     },
     {
       "category": "vogue ",
       "src": "https://assets.vogue.com/photos/5891e0ebb482c0ea0e4db2a8/4:3/w_2560%2Cc_limit/02-lestrange.jpg",
       "item": 0,
       "id": "ZEEc-Y8FvqQ"
+    },
+    {
+      "category": "aaaaaaaa",
+      "src": "aaaaaa",
+      "item": 0,
+      "id": "TOzEu2hRASI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
-} 
+}
